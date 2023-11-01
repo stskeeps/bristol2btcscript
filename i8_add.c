@@ -1,5 +1,5 @@
 #include <inttypes.h>
 
-uint8_t u8_add(uint8_t a, uint8_t b) {
+int8_t i8_add(int8_t a, int8_t b) {
    return a + b;
 }
