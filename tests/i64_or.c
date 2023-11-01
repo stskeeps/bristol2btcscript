@@ -1,5 +1,5 @@
 #include <inttypes.h>
 
-int64_t i16_or(int64_t a, int64_t b) {
+int64_t i32_or(int64_t a, int64_t b) {
    return a | b;
 }
