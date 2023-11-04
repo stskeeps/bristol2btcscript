@@ -1,0 +1,22 @@
+// input: 0
+<0>
+// input: 1
+<0>
+// output wires: [3]
+// {"a":0,"b":1,"gate":"XOR","output":3}
+<1>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 0
+<2>
+OP_ROLL
+OP_DROP
+// GC'ing wire 1
+<1>
+OP_ROLL
+OP_DROP

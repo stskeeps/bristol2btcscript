@@ -1,0 +1,37 @@
+// input: 0
+<0>
+// input: 1
+<0>
+// input: 2
+<0>
+// output wires: [5]
+// {"a":0,"b":1,"gate":"AND","output":4}
+<2>
+OP_PICK
+<2>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 0
+<3>
+OP_ROLL
+OP_DROP
+// GC'ing wire 1
+<2>
+OP_ROLL
+OP_DROP
+// {"a":4,"b":2,"gate":"AND","output":5}
+<0>
+OP_PICK
+<2>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 4
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 2
+<1>
+OP_ROLL
+OP_DROP

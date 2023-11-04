@@ -119,7 +119,7 @@ for (let i = 0; i < circuit.q; i++) {
          }
          stackToWire.shift();
          pushWireValueOnStack(stackToWire, outputWire);
-         
+
          /*
          let left_found = false;
          let right_found = false;
@@ -215,9 +215,39 @@ for (let i = 0; i < circuit.q; i++) {
     } else {
       throw "unknown gate type: " + gateType;
     }
+    
+    function gcWire(stackToWire, index, circuit, wire) {
+       let found = false;
+       if (circuit.dummy == wire) {
+          return;
+       }
+       if (circuit.O.includes(wire)) {
+          return;
+       }
+       for (let j = index + 1; j < circuit.q; j++) { 
+          if (circuit.A[j] == wire || circuit.B[j] == wire) {
+             found = true;
+             break;
+          }
+       }
+       if (found) {
+          return;
+       }
+       let stackIndex = findWireValueOnStackNoThrow(stackToWire, wire);
+       if (stackIndex !== -1) {
+          console.log("// GC'ing wire " + wire);
+          console.log("<" + (stackIndex) + ">");
+          console.log("OP_ROLL");
+          console.log("OP_DROP");
+          removeWireValueFromStack(stackToWire, wire);
+       }
+    }
+
+    gcWire(stackToWire, i, circuit, circuit.A[i]);
+    gcWire(stackToWire, i, circuit, circuit.B[i]);
 }
 
-for (let i = 0; i < circuit.q; i++) {
+/* for (let i = 0; i < circuit.q; i++) {
     const outputWire = circuit.n + 1 + i;
     if (!circuit.O.includes(outputWire)) {
        const leftWireOnStack = findWireValueOnStack(stackToWire, outputWire);
@@ -227,13 +257,16 @@ for (let i = 0; i < circuit.q; i++) {
        console.log("OP_ROLL");
        console.log("OP_DROP");
     }
-}
+} */
 
 for (let i = 0; i < circuit.n; i++) {
     if (!circuit.O.includes(i)) {
-       const leftWireOnStack = findWireValueOnStack(stackToWire, i);
+       const leftWireOnStack = findWireValueOnStackNoThrow(stackToWire, i);
+       if (leftWireOnStack == -1) {
+          continue;
+       }
        removeWireValueFromStack(stackToWire, i);
-       console.log("// removing non-output input wire " + i);
+       console.log("// removing unused?? non-output input wire " + i);
        console.log("<" + leftWireOnStack + ">");
        console.log("OP_ROLL");
        console.log("OP_DROP");

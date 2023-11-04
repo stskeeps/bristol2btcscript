@@ -1,0 +1,88 @@
+// input: 0
+<0>
+// input: 1
+<0>
+// input: 2
+<0>
+// input: 3
+<0>
+// input: 4
+<0>
+// input: 5
+<0>
+// output wires: [11]
+// {"a":0,"b":1,"gate":"OR","output":7}
+<5>
+OP_PICK
+<5>
+OP_PICK
+OP_BOOLOR
+// end gate
+// GC'ing wire 0
+<6>
+OP_ROLL
+OP_DROP
+// GC'ing wire 1
+<5>
+OP_ROLL
+OP_DROP
+// {"a":2,"b":3,"gate":"OR","output":8}
+<4>
+OP_PICK
+<4>
+OP_PICK
+OP_BOOLOR
+// end gate
+// GC'ing wire 2
+<5>
+OP_ROLL
+OP_DROP
+// GC'ing wire 3
+<4>
+OP_ROLL
+OP_DROP
+// {"a":7,"b":8,"gate":"AND","output":9}
+<1>
+OP_PICK
+<1>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 7
+<2>
+OP_ROLL
+OP_DROP
+// GC'ing wire 8
+<1>
+OP_ROLL
+OP_DROP
+// {"a":4,"b":5,"gate":"OR","output":10}
+<2>
+OP_PICK
+<2>
+OP_PICK
+OP_BOOLOR
+// end gate
+// GC'ing wire 4
+<3>
+OP_ROLL
+OP_DROP
+// GC'ing wire 5
+<2>
+OP_ROLL
+OP_DROP
+// {"a":9,"b":10,"gate":"AND","output":11}
+<1>
+OP_PICK
+<1>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 9
+<2>
+OP_ROLL
+OP_DROP
+// GC'ing wire 10
+<1>
+OP_ROLL
+OP_DROP

@@ -1,0 +1,1205 @@
+// input: 0
+<0>
+// input: 1
+<0>
+// input: 2
+<0>
+// input: 3
+<0>
+// input: 4
+<0>
+// input: 5
+<0>
+// input: 6
+<0>
+// input: 7
+<0>
+// input: 8
+<0>
+// input: 9
+<0>
+// input: 10
+<0>
+// input: 11
+<0>
+// input: 12
+<0>
+// input: 13
+<0>
+// input: 14
+<0>
+// input: 15
+<0>
+// input: 16
+<0>
+// input: 17
+<0>
+// input: 18
+<0>
+// input: 19
+<0>
+// input: 20
+<0>
+// input: 21
+<0>
+// input: 22
+<0>
+// input: 23
+<0>
+// input: 24
+<0>
+// input: 25
+<0>
+// input: 26
+<0>
+// input: 27
+<0>
+// input: 28
+<0>
+// input: 29
+<0>
+// input: 30
+<0>
+// input: 31
+<0>
+// output wires: [33,37,44,50,56,62,68,74,80,86,92,98,104,110,116,122]
+// {"a":0,"b":16,"gate":"XOR","output":33}
+<31>
+OP_PICK
+<16>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":0,"b":32,"gate":"NOT","output":34}
+<32>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 0
+<33>
+OP_ROLL
+OP_DROP
+// {"a":34,"b":16,"gate":"AND","output":35}
+<0>
+OP_PICK
+<18>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 34
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 16
+<17>
+OP_ROLL
+OP_DROP
+// {"a":17,"b":35,"gate":"XOR","output":36}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 17
+<17>
+OP_ROLL
+OP_DROP
+// {"a":1,"b":36,"gate":"XOR","output":37}
+<31>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":35,"b":32,"gate":"NOT","output":38}
+<2>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 35
+<3>
+OP_ROLL
+OP_DROP
+// {"a":1,"b":38,"gate":"XOR","output":39}
+<32>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 1
+<33>
+OP_ROLL
+OP_DROP
+// {"a":39,"b":36,"gate":"AND","output":40}
+<0>
+OP_PICK
+<4>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 39
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 36
+<3>
+OP_ROLL
+OP_DROP
+// {"a":40,"b":38,"gate":"XOR","output":41}
+<0>
+OP_PICK
+<2>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 40
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 38
+<1>
+OP_ROLL
+OP_DROP
+// {"a":18,"b":41,"gate":"XOR","output":42}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 18
+<17>
+OP_ROLL
+OP_DROP
+// {"a":42,"b":32,"gate":"NOT","output":43}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 42
+<1>
+OP_ROLL
+OP_DROP
+// {"a":2,"b":43,"gate":"XOR","output":44}
+<30>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":2,"b":41,"gate":"XOR","output":45}
+<31>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 2
+<32>
+OP_ROLL
+OP_DROP
+// {"a":45,"b":43,"gate":"AND","output":46}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 45
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 43
+<2>
+OP_ROLL
+OP_DROP
+// {"a":46,"b":41,"gate":"XOR","output":47}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 46
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 41
+<2>
+OP_ROLL
+OP_DROP
+// {"a":19,"b":47,"gate":"XOR","output":48}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 19
+<17>
+OP_ROLL
+OP_DROP
+// {"a":48,"b":32,"gate":"NOT","output":49}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 48
+<1>
+OP_ROLL
+OP_DROP
+// {"a":3,"b":49,"gate":"XOR","output":50}
+<29>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":3,"b":47,"gate":"XOR","output":51}
+<30>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 3
+<31>
+OP_ROLL
+OP_DROP
+// {"a":51,"b":49,"gate":"AND","output":52}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 51
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 49
+<2>
+OP_ROLL
+OP_DROP
+// {"a":52,"b":47,"gate":"XOR","output":53}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 52
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 47
+<2>
+OP_ROLL
+OP_DROP
+// {"a":20,"b":53,"gate":"XOR","output":54}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 20
+<17>
+OP_ROLL
+OP_DROP
+// {"a":54,"b":32,"gate":"NOT","output":55}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 54
+<1>
+OP_ROLL
+OP_DROP
+// {"a":4,"b":55,"gate":"XOR","output":56}
+<28>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":4,"b":53,"gate":"XOR","output":57}
+<29>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 4
+<30>
+OP_ROLL
+OP_DROP
+// {"a":57,"b":55,"gate":"AND","output":58}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 57
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 55
+<2>
+OP_ROLL
+OP_DROP
+// {"a":58,"b":53,"gate":"XOR","output":59}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 58
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 53
+<2>
+OP_ROLL
+OP_DROP
+// {"a":21,"b":59,"gate":"XOR","output":60}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 21
+<17>
+OP_ROLL
+OP_DROP
+// {"a":60,"b":32,"gate":"NOT","output":61}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 60
+<1>
+OP_ROLL
+OP_DROP
+// {"a":5,"b":61,"gate":"XOR","output":62}
+<27>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":5,"b":59,"gate":"XOR","output":63}
+<28>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 5
+<29>
+OP_ROLL
+OP_DROP
+// {"a":63,"b":61,"gate":"AND","output":64}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 63
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 61
+<2>
+OP_ROLL
+OP_DROP
+// {"a":64,"b":59,"gate":"XOR","output":65}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 64
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 59
+<2>
+OP_ROLL
+OP_DROP
+// {"a":22,"b":65,"gate":"XOR","output":66}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 22
+<17>
+OP_ROLL
+OP_DROP
+// {"a":66,"b":32,"gate":"NOT","output":67}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 66
+<1>
+OP_ROLL
+OP_DROP
+// {"a":6,"b":67,"gate":"XOR","output":68}
+<26>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":6,"b":65,"gate":"XOR","output":69}
+<27>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 6
+<28>
+OP_ROLL
+OP_DROP
+// {"a":69,"b":67,"gate":"AND","output":70}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 69
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 67
+<2>
+OP_ROLL
+OP_DROP
+// {"a":70,"b":65,"gate":"XOR","output":71}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 70
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 65
+<2>
+OP_ROLL
+OP_DROP
+// {"a":23,"b":71,"gate":"XOR","output":72}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 23
+<17>
+OP_ROLL
+OP_DROP
+// {"a":72,"b":32,"gate":"NOT","output":73}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 72
+<1>
+OP_ROLL
+OP_DROP
+// {"a":7,"b":73,"gate":"XOR","output":74}
+<25>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":7,"b":71,"gate":"XOR","output":75}
+<26>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 7
+<27>
+OP_ROLL
+OP_DROP
+// {"a":75,"b":73,"gate":"AND","output":76}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 75
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 73
+<2>
+OP_ROLL
+OP_DROP
+// {"a":76,"b":71,"gate":"XOR","output":77}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 76
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 71
+<2>
+OP_ROLL
+OP_DROP
+// {"a":24,"b":77,"gate":"XOR","output":78}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 24
+<17>
+OP_ROLL
+OP_DROP
+// {"a":78,"b":32,"gate":"NOT","output":79}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 78
+<1>
+OP_ROLL
+OP_DROP
+// {"a":8,"b":79,"gate":"XOR","output":80}
+<24>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":8,"b":77,"gate":"XOR","output":81}
+<25>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 8
+<26>
+OP_ROLL
+OP_DROP
+// {"a":81,"b":79,"gate":"AND","output":82}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 81
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 79
+<2>
+OP_ROLL
+OP_DROP
+// {"a":82,"b":77,"gate":"XOR","output":83}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 82
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 77
+<2>
+OP_ROLL
+OP_DROP
+// {"a":25,"b":83,"gate":"XOR","output":84}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 25
+<17>
+OP_ROLL
+OP_DROP
+// {"a":84,"b":32,"gate":"NOT","output":85}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 84
+<1>
+OP_ROLL
+OP_DROP
+// {"a":9,"b":85,"gate":"XOR","output":86}
+<23>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":9,"b":83,"gate":"XOR","output":87}
+<24>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 9
+<25>
+OP_ROLL
+OP_DROP
+// {"a":87,"b":85,"gate":"AND","output":88}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 87
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 85
+<2>
+OP_ROLL
+OP_DROP
+// {"a":88,"b":83,"gate":"XOR","output":89}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 88
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 83
+<2>
+OP_ROLL
+OP_DROP
+// {"a":26,"b":89,"gate":"XOR","output":90}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 26
+<17>
+OP_ROLL
+OP_DROP
+// {"a":90,"b":32,"gate":"NOT","output":91}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 90
+<1>
+OP_ROLL
+OP_DROP
+// {"a":10,"b":91,"gate":"XOR","output":92}
+<22>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":10,"b":89,"gate":"XOR","output":93}
+<23>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 10
+<24>
+OP_ROLL
+OP_DROP
+// {"a":93,"b":91,"gate":"AND","output":94}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 93
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 91
+<2>
+OP_ROLL
+OP_DROP
+// {"a":94,"b":89,"gate":"XOR","output":95}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 94
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 89
+<2>
+OP_ROLL
+OP_DROP
+// {"a":27,"b":95,"gate":"XOR","output":96}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 27
+<17>
+OP_ROLL
+OP_DROP
+// {"a":96,"b":32,"gate":"NOT","output":97}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 96
+<1>
+OP_ROLL
+OP_DROP
+// {"a":11,"b":97,"gate":"XOR","output":98}
+<21>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":11,"b":95,"gate":"XOR","output":99}
+<22>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 11
+<23>
+OP_ROLL
+OP_DROP
+// {"a":99,"b":97,"gate":"AND","output":100}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 99
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 97
+<2>
+OP_ROLL
+OP_DROP
+// {"a":100,"b":95,"gate":"XOR","output":101}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 100
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 95
+<2>
+OP_ROLL
+OP_DROP
+// {"a":28,"b":101,"gate":"XOR","output":102}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 28
+<17>
+OP_ROLL
+OP_DROP
+// {"a":102,"b":32,"gate":"NOT","output":103}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 102
+<1>
+OP_ROLL
+OP_DROP
+// {"a":12,"b":103,"gate":"XOR","output":104}
+<20>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":12,"b":101,"gate":"XOR","output":105}
+<21>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 12
+<22>
+OP_ROLL
+OP_DROP
+// {"a":105,"b":103,"gate":"AND","output":106}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 105
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 103
+<2>
+OP_ROLL
+OP_DROP
+// {"a":106,"b":101,"gate":"XOR","output":107}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 106
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 101
+<2>
+OP_ROLL
+OP_DROP
+// {"a":29,"b":107,"gate":"XOR","output":108}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 29
+<17>
+OP_ROLL
+OP_DROP
+// {"a":108,"b":32,"gate":"NOT","output":109}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 108
+<1>
+OP_ROLL
+OP_DROP
+// {"a":13,"b":109,"gate":"XOR","output":110}
+<19>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":13,"b":107,"gate":"XOR","output":111}
+<20>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 13
+<21>
+OP_ROLL
+OP_DROP
+// {"a":111,"b":109,"gate":"AND","output":112}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 111
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 109
+<2>
+OP_ROLL
+OP_DROP
+// {"a":112,"b":107,"gate":"XOR","output":113}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 112
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 107
+<2>
+OP_ROLL
+OP_DROP
+// {"a":30,"b":113,"gate":"XOR","output":114}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 30
+<17>
+OP_ROLL
+OP_DROP
+// {"a":114,"b":32,"gate":"NOT","output":115}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 114
+<1>
+OP_ROLL
+OP_DROP
+// {"a":14,"b":115,"gate":"XOR","output":116}
+<18>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// {"a":14,"b":113,"gate":"XOR","output":117}
+<19>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 14
+<20>
+OP_ROLL
+OP_DROP
+// {"a":117,"b":115,"gate":"AND","output":118}
+<0>
+OP_PICK
+<3>
+OP_PICK
+OP_BOOLAND
+// end gate
+// GC'ing wire 117
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 115
+<2>
+OP_ROLL
+OP_DROP
+// {"a":118,"b":113,"gate":"XOR","output":119}
+<0>
+OP_PICK
+<3>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 118
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 113
+<2>
+OP_ROLL
+OP_DROP
+// {"a":31,"b":119,"gate":"XOR","output":120}
+<16>
+OP_PICK
+<1>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 31
+<17>
+OP_ROLL
+OP_DROP
+// GC'ing wire 119
+<1>
+OP_ROLL
+OP_DROP
+// {"a":120,"b":15,"gate":"XOR","output":121}
+<0>
+OP_PICK
+<17>
+OP_PICK
+// OP_BOOLXOR start
+OP_NUMNOTEQUAL
+// OP_BOOLXOR end
+// end gate
+// GC'ing wire 120
+<1>
+OP_ROLL
+OP_DROP
+// GC'ing wire 15
+<16>
+OP_ROLL
+OP_DROP
+// {"a":121,"b":32,"gate":"NOT","output":122}
+<0>
+OP_PICK
+OP_NOT
+// end gate
+// GC'ing wire 121
+<1>
+OP_ROLL
+OP_DROP
