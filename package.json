@@ -1,0 +1,25 @@
+{
+  "name": "bristol2btcscript",
+  "version": "1.0.0",
+  "description": "WIP not working",
+  "main": "bristol2btcscript.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stskeeps/bristol2btcscript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stskeeps/bristol2btcscript/issues"
+  },
+  "homepage": "https://github.com/stskeeps/bristol2btcscript#readme",
+  "dependencies": {
+    "@msgpack/msgpack": "^3.0.0-beta2"
+  }
+}
